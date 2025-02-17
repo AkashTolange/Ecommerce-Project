@@ -10,7 +10,7 @@ const cors = require("cors");
 //what this for man
 const { type } = require('os');
 
-app.use(express.json());
+app.use(express.json());~
 app.use(cors());
 
 //Database connection with mongodb
