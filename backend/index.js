@@ -7,6 +7,9 @@ const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
 
+// Load environment variables
+require('dotenv').config();
+
 //what this for man
 const { type } = require('os');
 
@@ -15,7 +18,7 @@ app.use(cors());
 
 //Database connection with mongodb
 // mongoose.connect("mongodb+srv://akashhtolangee77:aC9WMFYgb7hzxeKa@cluster0.5mh1h.mongodb.net/e-commerce")
-mongoose.connect(mongodbURI)
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => {
     console.log("MongoDB connected successfully!");
   })
