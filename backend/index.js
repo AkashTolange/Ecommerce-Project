@@ -52,7 +52,7 @@ app.post("/upload",upload.single('product'), (req, res)=>{
     res.json({
         success:1, //add a comma here ok
        
-        image_url: `https://ecommerce-project-zeg6.onrender.com/images/${req.file.filename}`  // Update with the deployed URL
+        image_url: `http://ecommerce-project-zeg6.onrender.com/images/${req.file.filename}`  // Update with the deployed URL
     })
 })
 
