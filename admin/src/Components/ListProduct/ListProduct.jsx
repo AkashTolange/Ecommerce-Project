@@ -8,7 +8,7 @@ const ListProduct = () => {
   const [allproducts, setAllProducts] =useState([]);
 
   const fetcheInfo = async () => {
-    await fetch('http://localhost:4000/allproducts')
+    await fetch('https://ecommerce-project-zeg6.onrender.com/allproducts')
     .then((res)=>res.json())
     .then((data)=>{setAllProducts(data)});
 
@@ -21,7 +21,7 @@ const ListProduct = () => {
 
   //to remove
   const remove_product =async (id) => {
-    await fetch('http://localhost:4000/removeproduct',{ 
+    await fetch('https://ecommerce-project-zeg6.onrender.com/removeproduct',{ 
       method:'POST',
       headers: { 
         Accept: 'application/json',
