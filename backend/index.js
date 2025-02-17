@@ -15,7 +15,7 @@ app.use(cors());
 
 //Database connection with mongodb
 // mongoose.connect("mongodb+srv://akashhtolangee77:aC9WMFYgb7hzxeKa@cluster0.5mh1h.mongodb.net/e-commerce")
-mongoose.connect("mongodb+srv://dbUser:dbUserPassword@mycluster.pwba7.mongodb.net/?retryWrites=true&w=majority&appName=MyCluster")
+mongoose.connect(mongodbURI)
 .then(() => {
     console.log("MongoDB connected successfully!");
   })
