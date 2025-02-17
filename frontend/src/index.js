@@ -1,21 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.css'; // Your styles
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ShopContextProvider from './Context/ShopContext';
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const root = ReactDOM.createRoot(document.getElementById('root'));  // The div in index.html
 root.render(
- 
-    <React.StrictMode>
+  <React.StrictMode>
     <ShopContextProvider>
-    <App />
+      <App />
     </ShopContextProvider>
-    
-    
-    </React.StrictMode>
-    
-  
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
